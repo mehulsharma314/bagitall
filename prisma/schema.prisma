@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider   = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ProductStatus {
+  AVAILABLE
+  RESERVED
+  SOLD
+}
+
+enum ProductType {
+  THRIFT
+  REKALTURE
+}
+
+model Product {
+  id                   String        @id @default(uuid())
+  title                String
+  slug                 String        @unique
+  description          String
+  price                Float
+  status               ProductStatus @default(AVAILABLE)
+  type                 ProductType
+  reservationExpiresAt DateTime?
+  images               Json          // JSON array of image URLs
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+  orders               Order[]
+
+  @@index([slug])
+  @@index([status])
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  FAILED
+}
+
+model Order {
+  id                String      @id @default(uuid())
+  productId         String
+  product           Product     @relation(fields: [productId], references: [id])
+  customerName      String
+  email             String
+  phone             String
+  address           String
+  razorpayOrderId   String      @unique
+  razorpayPaymentId String?     @unique
+  status            OrderStatus @default(PENDING)
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  @@index([productId])
+  @@index([razorpayOrderId])
+}

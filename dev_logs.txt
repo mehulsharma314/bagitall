@@ -1,0 +1,124 @@
+
+> bagitall@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.5:3000
+- Environments: .env
+✓ Ready in 1355ms
+
+ GET / 200 in 1485ms (next.js: 763ms, application-code: 723ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="barlow_condensed_5ff3ebd5-module__PEDwWW__variable courier_prime_7e0392e2-modul..."
+-                           className="barlow_condensed_5ff3ebd5-module__PEDwWW__variable courier_prime_7e0392e2-modul..."
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file://C:/Users/mi/Downloads/mehul drive/bag it all/anriygravity worksapce/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+ GET / 200 in 254ms (next.js: 36ms, application-code: 218ms)
+Error: ENOENT: no such file or directory, scandir 'C:\Users\mi\Downloads\mehul drive\bag it all\anriygravity worksapce\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\mi\\Downloads\\mehul drive\\bag it all\\anriygravity worksapce\\app'
+}
+⨯ unhandledRejection: Error: ENOENT: no such file or directory, scandir 'C:\Users\mi\Downloads\mehul drive\bag it all\anriygravity worksapce\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\mi\\Downloads\\mehul drive\\bag it all\\anriygravity worksapce\\app'
+}
+⨯ unhandledRejection:  Error: ENOENT: no such file or directory, scandir 'C:\Users\mi\Downloads\mehul drive\bag it all\anriygravity worksapce\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\mi\\Downloads\\mehul drive\\bag it all\\anriygravity worksapce\\app'
+}
+✓ Compiled in 4.4s
+Error: ENOENT: no such file or directory, scandir 'C:\Users\mi\Downloads\mehul drive\bag it all\anriygravity worksapce\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\mi\\Downloads\\mehul drive\\bag it all\\anriygravity worksapce\\app'
+}
+⨯ unhandledRejection: Error: ENOENT: no such file or directory, scandir 'C:\Users\mi\Downloads\mehul drive\bag it all\anriygravity worksapce\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\mi\\Downloads\\mehul drive\\bag it all\\anriygravity worksapce\\app'
+}
+⨯ unhandledRejection:  Error: ENOENT: no such file or directory, scandir 'C:\Users\mi\Downloads\mehul drive\bag it all\anriygravity worksapce\app'
+    at ignore-listed frames {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: 'C:\\Users\\mi\\Downloads\\mehul drive\\bag it all\\anriygravity worksapce\\app'
+}
+✓ Compiled in 140ms
+Persisting failed: Unable to write SST file 00000655.sst
+
+Caused by:
+    The system cannot find the path specified. (os error 3)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.5:3000
+- Environments: .env
+✓ Ready in 2.2s
+⚠ `eslint` configuration in next.config.mjs is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.mjs options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⚠ Duplicate page detected. src\app\admin\page.js and src\app\admin\page.tsx resolve to /admin
+⚠ Duplicate page detected. src\app\admin\products\new\page.js and src\app\admin\products\new\page.tsx resolve to /admin/products/new
+⚠ Duplicate page detected. src\app\admin\page.js and src\app\admin\page.tsx resolve to /admin
+⚠ Duplicate page detected. src\app\admin\products\new\page.js and src\app\admin\products\new\page.tsx resolve to /admin/products/new
+
