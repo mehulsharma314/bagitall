@@ -10,16 +10,16 @@
   /* Blue & White Palette */
   --blue-deep: #0f172a;          /* Dark Navy — REकलture sections */
   --blue-dark: #1e3a5f;          /* Deep Sapphire */
-  --blue-mid: #1a56db;           /* Royal Blue — Primary brand */
-  --blue-brand: #2563eb;         /* Bright Royal Blue — CTAs */
-  --blue-light: #93c5fd;         /* Soft Sky Blue — accents */
-  --blue-pale: #dbeafe;          /* Very soft blue — section tints */
-  --blue-ghost: #f0f7ff;         /* Near-white blue — subtle bg */
+  --blue-mid: #1e293b;           /* Archival Slate — Primary brand */
+  --blue-brand: #334155;         /* Deep Slate — CTAs */
+  --blue-light: #94a3b8;         /* Neutral Slate — archival accents */
+  --blue-pale: #e2e8f0;          /* Silver Gray — section tints */
+  --blue-ghost: #f8fafc;         /* White-Slate — subtle bg */
   --white: #ffffff;
-  --off-white: #f8fafc;
-  --cream: #f1f5f9;
-  --gold: #d4af37;
-  --gold-light: #f3cf7a;
+  --off-white: #fafafa;
+  --cream: #ffffff;
+  --gold: #cbd5e1;               /* Oxidized Silver */
+  --gold-light: #f1f5f9;         /* Soft Linen */
   /* Text — all WCAG AA compliant on white bg */
   --text-primary: #0f172a;       /* Near black slate */
   --text-secondary: #1e293b;     /* Dark slate */
